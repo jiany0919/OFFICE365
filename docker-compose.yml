@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  main:
+    build: .
+    image: keep-alive-e5:latest
+    container_name: keep-alive-e5
+    environment:
+      DOCKER: true
+      USER: "A@xx.onmicrosoft.com\nB@xx.onmicrosoft.com"
+      PASSWD: "A_password\nB_password"
